@@ -8,6 +8,7 @@ const colors = {
     900: "#1a365d",
     800: "#153e75",
     700: "#2a69ac",
+    background: "#f0f0f0" // Assuming this is the background color of the Financial Times website
   },
 };
 

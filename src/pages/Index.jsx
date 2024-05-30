@@ -1,9 +1,10 @@
-import { Box, Container, Flex, VStack } from "@chakra-ui/react";
+import { Box, Container, Flex, VStack, useTheme } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
 import ArticleCard from "../components/ArticleCard";
 import Sidebar from "../components/Sidebar";
 
 const Index = () => {
+  const theme = useTheme();
   const articles = [
     {
       title: "Breaking News: Market Hits Record High",
@@ -20,7 +21,7 @@ const Index = () => {
   const trendingTopics = ["Economy", "Elections", "Climate Change", "Tech Innovations"];
 
   return (
-    <Box>
+    <Box bg={theme.colors.brand.background}>
       <Navbar />
       <Container maxW="container.xl" mt={4}>
         <Flex direction={{ base: "column", md: "row" }} spacing={4}>
